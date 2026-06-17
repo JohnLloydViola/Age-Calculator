@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --bg-color: hsl(0, 0%, 86%);
+  --white-color:hsl(0, 100%, 100%);
+  --grey-color-500: hsl(0, 1%, 44%);
+  --grey-color-200: hsl(0, 0%, 86%);
+  --purple-color: hsl(259, 100%, 65%);
+
+  --font-size-input: 1.563rem;
+  --input-padding:0.938rem;
+  --border-radius-default: 0.625rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-size: 1rem;
+  font-family: "Poppins bold", sans-serif;
+}
+
+@font-face {
+  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-family: "Poppins bold";
+}
+
+/* Main container */
+.container {
+  width: 40%;
+  margin: 10.25rem auto;
+  border: 1px solid var(--grey-color-200);
+  background-color: var(--white-color);
+  padding: 2.5rem;
+  border-top-left-radius: var(--border-radius-default);
+  border-top-right-radius: var(--border-radius-default);
+  border-bottom-left-radius: var(--border-radius-default);
+  border-bottom-right-radius: 30%;
+  
+}
+
+
+/* start of Birthdate container */
+.birthdate-container {
+  display:flex;
+  gap: 1.563rem;
+}
+
+.birthdate-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.313rem 0;
+  color: var(--grey-color-500);
+}
+
+.birthdate-input {
+  padding: var(--input-padding);
+  font-size: var(--font-size-input);
+  border-radius: var(--border-radius-default);
+  border: 1px solid var(--grey-color-200);
+  font-weight: bolder;
+}
+
+
+
+/*start of submit container */
+.submit-container > div {
+  display: flex;
+  align-items: center;
+  
+}
+
+.submit-container hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid hsl(0, 0%, 86%);
+  margin: 0;
+}
+
+.submit-button {
+  border: none;
+  background: var(--purple-color);
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.submit-button img {
+  width:25px;
+  height:25px;
+  display:block;
+}
+
+
+/*start of result container */
+.result-container {
+  font-size: 5rem;
+}
+
+.result-container p > span {
+  color: var(--purple-color);
+}

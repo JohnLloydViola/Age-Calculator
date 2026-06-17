@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+
+    <div class="birthdate-container">
+      <div class="day-div birthdate-div">
+        <label for="day"> DAY </label>
+        <input type="text" id="day" class="birthdate-input" size="4" placeholder="DD" maxlength="2">
+      </div>
+
+      <div class="month-div birthdate-div">
+        <label for="month"> MONTH </label>
+        <input type="text" id="month" class="birthdate-input" size="4" placeholder="MM" maxlength="2">
+      </div>
+
+      <div class="year-div birthdate-div">
+        <label for="year"> YEAR </label>
+        <input type="text" id="year" class="birthdate-input" size="4" placeholder="YYYY" maxlength="4">
+      </div>
+
+    </div>
+
+    <div class="submit-container">
+      <div>
+        <hr>
+        <button class="submit-button" type="button" onclick="ageValidation()"><img src="assets/images/icon-arrow.svg" alt="Submit-button"></button>
+      </div>
+
+    </div>
+
+    <div class="result-container">
+      <p> <span id="span-year" class="result-year">- -</span> years </p>
+      <p> <span id="span-month" class="result-months">- -</span> months </p>
+      <p> <span id="span-day" class="result-days">- -</span> days </p>
+    </div>
+
+    
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
