@@ -10,6 +10,7 @@
   --grey-color-500: hsl(0, 1%, 44%);
   --grey-color-200: hsl(0, 0%, 86%);
   --purple-color: hsl(259, 100%, 65%);
+  --black-color: hsl(0, 0%, 0%);
 
   --font-size-input: 1.563rem;
   --input-padding:0.938rem;
@@ -26,6 +27,15 @@ body {
   src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
   font-family: "Poppins bold";
 }
+
+
+/* Hover states, animations stuff */
+.submit-button:hover {
+  background-color: var(--black-color);
+}
+
+
+
 
 /* Main container */
 .container {
@@ -89,6 +99,7 @@ body {
   cursor: pointer;
   padding: 20px;
   border-radius: 50%;
+
 }
 
 .submit-button img {
