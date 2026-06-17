@@ -71,6 +71,9 @@ body {
   border-radius: var(--border-radius-default);
   border: 1px solid var(--grey-color-200);
   font-weight: bolder;
+  transition-property: border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .birthdate-input:focus {
@@ -99,7 +102,9 @@ body {
   cursor: pointer;
   padding: 20px;
   border-radius: 50%;
-
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .submit-button img {
