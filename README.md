@@ -1,1 +1,1 @@
-Unfinished Responsiveness. More to add 
+Simple Age calculator which takes input of day, month, year. It calculates your age and shows your age in terms of years, months, and days.
